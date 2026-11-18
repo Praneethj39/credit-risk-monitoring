@@ -1,0 +1,60 @@
+{
+  "version": "random_forest-20261117",
+  "champion": "random_forest",
+  "features": [
+    "credit_limit",
+    "education",
+    "status_last_month",
+    "months_late_6m",
+    "worst_delay_6m",
+    "utilisation",
+    "avg_utilisation_6m",
+    "balance_trend_6m",
+    "repayment_ratio_6m",
+    "last_payment_ratio",
+    "zero_payment_months"
+  ],
+  "excluded_attributes": [
+    "SEX",
+    "MARRIAGE",
+    "AGE"
+  ],
+  "train_rows": 18000,
+  "val_rows": 6000,
+  "test_rows": 6000,
+  "leaderboard": [
+    {
+      "model": "logistic_regression",
+      "val_auc": 0.7293,
+      "test_auc": 0.7482,
+      "test_gini": 0.4964,
+      "test_ks": 0.4221
+    },
+    {
+      "model": "random_forest",
+      "val_auc": 0.7738,
+      "test_auc": 0.7872,
+      "test_gini": 0.5744,
+      "test_ks": 0.4379
+    },
+    {
+      "model": "xgboost",
+      "val_auc": 0.7721,
+      "test_auc": 0.7896,
+      "test_gini": 0.5792,
+      "test_ks": 0.445
+    }
+  ],
+  "policy_view": {
+    "portfolio_default_rate": 0.2212,
+    "riskiest_20pct_capture_of_defaults": 0.5305,
+    "bad_rate_if_riskiest_20pct_declined": 0.1298
+  },
+  "top_features": {
+    "status_last_month": 0.344,
+    "worst_delay_6m": 0.181,
+    "months_late_6m": 0.1797,
+    "repayment_ratio_6m": 0.0507,
+    "zero_payment_months": 0.0436
+  }
+}

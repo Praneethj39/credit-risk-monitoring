@@ -1,0 +1,7 @@
+month,model_version,accounts,mean_pd,actual_default_rate,score_psi,score_status,worst_feature,worst_feature_psi,features_in_alert,auc
+1,random_forest-20261117,2000,0.2197,0.233,0.0058,stable,repayment_ratio_6m,0.0142,0,0.777
+2,random_forest-20261117,2000,0.2174,0.214,0.0089,stable,last_payment_ratio,0.0127,0,0.8044
+3,random_forest-20261117,2000,0.2221,0.22,0.0058,stable,utilisation,0.0056,0,0.7902
+4,random_forest-20261117,2000,0.262,0.255,0.053,stable,status_last_month,0.0646,0,0.7931
+5,random_forest-20261117,2000,0.3288,0.295,0.2754,ALERT,status_last_month,0.3569,2,0.8004
+6,random_forest-20261117,2000,0.3773,0.339,0.5486,ALERT,status_last_month,0.7188,4,0.7699

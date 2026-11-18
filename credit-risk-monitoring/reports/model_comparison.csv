@@ -1,0 +1,4 @@
+model,val_auc,test_auc,test_gini,test_ks
+random_forest,0.7738,0.7872,0.5744,0.4379
+xgboost,0.7721,0.7896,0.5792,0.445
+logistic_regression,0.7293,0.7482,0.4964,0.4221
